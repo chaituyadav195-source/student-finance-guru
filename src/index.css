@@ -2,39 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* AI Financial Tool Design System - Indian Student Fintech Theme */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
-
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
-
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
-
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Financial App Base Colors */
+    --background: 240 15% 4%;
+    --foreground: 210 20% 95%;
+    
+    /* Trust & Security Colors */
+    --primary: 225 71% 13%;
+    --primary-foreground: 210 20% 98%;
+    --primary-glow: 225 71% 25%;
+    
+    /* Indian Accent Colors */
+    --saffron: 30 100% 55%;
+    --saffron-foreground: 0 0% 0%;
+    --emerald: 145 85% 35%;
+    --emerald-foreground: 0 0% 100%;
+    
+    /* Financial Status Colors */
+    --success: 145 85% 35%;
+    --success-foreground: 0 0% 100%;
+    --warning: 30 100% 55%;
+    --warning-foreground: 0 0% 0%;
+    --danger: 0 84% 60%;
+    --danger-foreground: 0 0% 100%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(225 71% 13%), hsl(225 71% 25%));
+    --gradient-saffron: linear-gradient(135deg, hsl(30 100% 55%), hsl(35 100% 65%));
+    --gradient-emerald: linear-gradient(135deg, hsl(145 85% 35%), hsl(145 85% 45%));
+    --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+    
+    /* Glass Effects */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(var(--primary-glow) / 0.3);
+    --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+    --shadow-elevated: 0 20px 50px -15px rgba(0, 0, 0, 0.4);
+    
+    /* Animation */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Shadcn Integration */
+    --card: 240 12% 8%;
+    --card-foreground: 210 20% 95%;
+    
+    --popover: 240 12% 8%;
+    --popover-foreground: 210 20% 95%;
+    
+    --secondary: 240 10% 12%;
+    --secondary-foreground: 210 20% 95%;
+    
+    --muted: 240 8% 15%;
+    --muted-foreground: 215 15% 65%;
+    
+    --accent: 30 100% 55%;
+    --accent-foreground: 0 0% 0%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 20% 98%;
+    
+    --border: 240 8% 20%;
+    --input: 240 8% 15%;
+    --ring: 30 100% 55%;
 
     --radius: 0.5rem;
 

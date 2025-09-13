@@ -19,6 +19,28 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        
+        // Indian Fintech Colors
+        saffron: {
+          DEFAULT: "hsl(var(--saffron))",
+          foreground: "hsl(var(--saffron-foreground))",
+        },
+        emerald: {
+          DEFAULT: "hsl(var(--emerald))",
+          foreground: "hsl(var(--emerald-foreground))",
+        },
+        success: {
+          DEFAULT: "hsl(var(--success))",
+          foreground: "hsl(var(--success-foreground))",
+        },
+        warning: {
+          DEFAULT: "hsl(var(--warning))",
+          foreground: "hsl(var(--warning-foreground))",
+        },
+        danger: {
+          DEFAULT: "hsl(var(--danger))",
+          foreground: "hsl(var(--danger-foreground))",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
@@ -62,6 +84,17 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-saffron': 'var(--gradient-saffron)',
+        'gradient-emerald': 'var(--gradient-emerald)',
+        'gradient-glass': 'var(--gradient-glass)',
+      },
+      boxShadow: {
+        'glow': 'var(--shadow-glow)',
+        'card': 'var(--shadow-card)',
+        'elevated': 'var(--shadow-elevated)',
       },
       keyframes: {
         "accordion-down": {
